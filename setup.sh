@@ -57,6 +57,7 @@ mkdir ~/ICS3U/Unit1/Unit1-01
 mkdir ~/ICS3U/Unit1/Unit1-02
 mkdir ~/ICS3U/Unit1/Unit1-03
 mkdir ~/ICS3U/Unit1/Unit1-04
+mkdir ~/ICS3U/Unit1/Unit1-05
 mkdir ~/ICS3U/Unit2
 mkdir ~/ICS3U/Unit2/Unit2-01
 mkdir ~/ICS3U/Unit2/Unit2-02
