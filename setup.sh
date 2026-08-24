@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Created by: Mr Coxall
-# Created on: Jun 2022
+# Edited by: Ms Raffin
+# Last Update: Aug 2026
 # Created for: To automate the generation of SSH GitHub keys
 
 
