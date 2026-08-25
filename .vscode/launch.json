@@ -5,7 +5,7 @@
       "name": "C/C++: Build and debug active C++ file",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.app",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
