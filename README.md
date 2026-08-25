@@ -7,7 +7,7 @@ It includes everything you will need to code in Python and C/C++.
 
 <br>
 Once you have arrived at this page, in the terminal type:<br>
-- `sh ./setup.sh`<br>
+- <b>sh ./setup.sh</b><br>
 - then follow the prompts to finish setting up your new Codespace and connect it to your GitHub account<br>
 - once your new Codespace window opens, close the old one down<br>
 
