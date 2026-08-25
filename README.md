@@ -12,7 +12,7 @@ To create your Codespace instance:
 </ul>
 
 <br>
-Once the Codespace instance has finished building, in the terminal type:
+Once the Codespace instance has finished building, open the terminal and type:
 <ul>
 <li><b>sh ./setup.sh</b></li>
 <li>then follow the prompts to finish setting up your new Codespace and connect it to your GitHub account</li>
