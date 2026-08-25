@@ -11,7 +11,8 @@ To create your Codespace instance:
 <li>Click on <img src="images/use-this-template.jpeg" width = "15%" alt="Use this template" class="center"> -> <b>Open in a Codespace</b></li>
 </ul>
 
-Once you have arrived at this page, in the terminal type:
+<br>
+Once the Codespace instance has finished building, in the terminal type:
 <ul>
 <li><b>sh ./setup.sh</b></li>
 <li>then follow the prompts to finish setting up your new Codespace and connect it to your GitHub account</li>
