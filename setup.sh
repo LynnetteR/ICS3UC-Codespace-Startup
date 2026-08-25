@@ -12,9 +12,9 @@ echo ""
 
 echo "Please enter your full name (ex: Jane Smith): "
 read  name
-echo "Please enter your email address that you used to setup GitHub (ex: mr.coxall@mths.ca): "
+echo "Please enter your email address that you used to setup GitHub (ex: lynnette.raffin@ocsb.ca): "
 read  email
-echo "Please enter your GitHub user name (ex: mr-coxall): "
+echo "Please enter your GitHub user name (ex: LynnetteR): "
 read  user
 
 echo ""
@@ -53,6 +53,8 @@ read  any_key
 
 # create an ICS3U/C directory in the root directory
 mkdir ~/ICS3UC
+mkdir ~/ICS3UC/Intro
+mkdir ~/ICS3UC/Intro/Intro-04
 mkdir ~/ICS3UC/Unit1
 mkdir ~/ICS3UC/Unit1/Unit1-01
 mkdir ~/ICS3UC/Unit1/Unit1-02
