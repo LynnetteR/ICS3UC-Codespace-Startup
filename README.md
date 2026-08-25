@@ -1,7 +1,7 @@
-<h1 align="center"> ICS3U Codespace Startup </h1>
+<h1 align="center"> ICS3U/C Codespace Startup </h1>
 <img src="https://github.com/Mr-Coxall/ICS3U-Codespace-Startup/raw/main/images/github-codespaces.png" alt="github-codespaces" class="center">
 
-Use this GitHub repo to setup an ICS3U Codespace.
+Use this GitHub repo to setup an ICS3U/C Codespace.
 
 It includes everything you will need to code in Python and C/C++.
 
