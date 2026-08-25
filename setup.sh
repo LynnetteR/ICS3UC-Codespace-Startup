@@ -100,11 +100,11 @@ mkdir ~/ICS3UC/Unit6/Unit6-05
 mkdir ~/ICS3UC/Unit6/Unit6-06
 
 # copy over the .vscode directory into it
-cp -r .vscode ~/ICS3U/.vscode
+cp -r .vscode ~/ICS3UC/.vscode
 
 # update the .bashrc to add in aliases for ll, ..
 cp .bashrc ~/.bashrc
 
-# change into the ICS3U directory and then open Codespaces in there
-cd ~/ICS3U
+# change into the ICS3UC directory and then open Codespaces in there
+cd ~/ICS3UC
 code .
