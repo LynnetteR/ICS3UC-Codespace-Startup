@@ -12,9 +12,9 @@ echo ""
 
 echo "Please enter your full name (ex: Jane Smith): "
 read  name
-echo "Please enter your email address that you used to setup GitHub (ex: mr.coxall@mths.ca): "
+echo "Please enter your email address that you used to setup GitHub (ex: sophie.student16@gmail.com): "
 read  email
-echo "Please enter your GitHub user name (ex: mr-coxall): "
+echo "Please enter your GitHub user name (ex: SophieStudent): "
 read  user
 
 echo ""
