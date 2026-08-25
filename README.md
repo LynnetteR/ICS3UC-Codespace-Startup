@@ -8,7 +8,7 @@ It includes everything you will need to code in Python and C/C++.
 To create your Codespace instance:
 <ul>
 <li>Log into your GitHub student account.</li>
-<li>Click on <img src="https://github.com/LynnetteR/ICS3U-Codespace-Startup/raw/main/images/use this template.png" alt="Use this template" class="center"></li>
+<li>Click on <img src="images/use-this-template.jpeg" alt="Use this template" class="center"></li>
 </ul>
 
 Once you have arrived at this page, in the terminal type:
