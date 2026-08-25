@@ -6,9 +6,9 @@ Use this GitHub repo to setup an ICS3U Codespace.
 It includes everything you will need to code in Python and C/C++.
 
 <br>
-Once you have arrived at this page, in the terminal type:
-- `sh ./setup.sh`
-- then follow the prompts to finish setting up your new Codespace and connect it to your GitHub account
-- once your new Codespace window opens, close the old one down
+Once you have arrived at this page, in the terminal type:<br>
+- `sh ./setup.sh`<br>
+- then follow the prompts to finish setting up your new Codespace and connect it to your GitHub account<br>
+- once your new Codespace window opens, close the old one down<br>
 
 <h1 style="color:red;font-size:150px;text-align:center;"> 🖥️⌨️🖱️🥷 </h1>
