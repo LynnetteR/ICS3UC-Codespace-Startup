@@ -1,16 +1,6 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.233.0/containers/debian
 {
-  "name": "Debian",
-  "build": {
-    "dockerfile": "Dockerfile",
-    // Update 'VARIANT' to pick an Debian version: bullseye, buster
-    // Use bullseye on local arm64/Apple Silicon.
-    "args": {
-      "VARIANT": "bullseye"
-    }
-  },
-  // Set *default* container specific settings.json values on container create.
+  "name": "Classroom Dev Environment (Swift Enabled)",
+  "image": "://microsoft.com",
   "settings": {
     "C_Cpp.autocomplete": "Enabled",
     "C_Cpp.codeFolding": "Disabled",
@@ -37,6 +27,8 @@
     "editor.folding": false,
     "editor.smoothScrolling": true,
     "editor.formatOnPaste": true,
+    "editor.mouseWheelZoom": true,
+    "editor.lineNumbers": "relative",
     "explorer.confirmDragAndDrop": false,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
@@ -61,18 +53,21 @@
     "workbench.preferredLightColorTheme": "GitHub Dark",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "GitHub Dark",
+    "workbench.activityBar.visible": false,
     "workbench.editorAssociations": {
       "*.png": "imagePreview.previewEditor",
       "*.ico": "imagePreview.previewEditor"
     },
     "[css]": {
       "editor.defaultFormatter": "vscode.css-language-features"
-    }
+    },
+    "lldb.library": "/usr/lib/liblldb.so"
   },
-  // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
     "ms-python.python",
     "ms-vscode.cpptools-extension-pack",
+    "vscjava.vscode-java-pack",
+    "sswg.swift-lang",
     "hediet.vscode-drawio",
     "ms-vsliveshare.vsliveshare",
     "streetsidesoftware.code-spell-checker",
@@ -80,18 +75,20 @@
     "VisualStudioExptTeam.vscodeintellicode",
     "medo64.render-crlf"
   ],
-  // Uncomment the next line to use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "pip3 install cpplint",
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
-  // Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
-  // "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
-  // Uncomment when using a ptrace-based debugger like C++, Go, and Rust
-  // "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
-  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-  "remoteUser": "vscode",
   "features": {
-    "git": "latest",
-    "python": "latest"
-  }
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17",
+      "installMaven": "true",
+      "installGradle": "false"
+    }
+  },
+  "postCreateCommand": "pip3 install cpplint",
+  "remoteUser": "vscode",
+  "runArgs": [
+    "--cap-add=SYS_PTRACE",
+    "--security-opt",
+    "seccomp=unconfined"
+  ]
 }
