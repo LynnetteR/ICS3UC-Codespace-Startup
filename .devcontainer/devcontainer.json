@@ -77,7 +77,6 @@
     "ms-vsliveshare.vsliveshare",
     "streetsidesoftware.code-spell-checker",
     "PKief.material-icon-theme",
-    "VisualStudioExptTeam.vscodeintellicode",
     "medo64.render-crlf"
   ],
   // Uncomment the next line to use 'postCreateCommand' to run commands after the container is created.
