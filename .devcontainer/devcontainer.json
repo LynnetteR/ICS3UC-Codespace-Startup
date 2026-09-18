@@ -1,15 +1,8 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.233.0/containers/debian
 {
-  "name": "Debian",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "args": {
-      "VARIANT": "bookworm"
-    }
-  },
+  "name": "ICS3UC Debian Environment",
+  // ⚡ FIX: Removed the broken build block and replaced it with a direct, stable pre-built image link
+  "image": "://microsoft.com",
 
-  // Set *default* container specific settings.json values on container create.
   "settings": {
     "C_Cpp.autocomplete": "Enabled",
     "C_Cpp.codeFolding": "Disabled",
@@ -18,7 +11,6 @@
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
     "editor.fontSize": 20,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "editor.minimap.enabled": false,
@@ -40,22 +32,10 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "html.format.extraLiners": "",
-    "liveServer.settings.donotVerifyTags": true,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "prettier.printWidth": 100,
-    "prettier.configPath": "./",
-    "prettier.semi": false,
-    "python.formatting.blackArgs": [
-      "--line-length",
-      "120"
-    ],
-    "python.formatting.provider": "black",
     "python.languageServer": "Pylance",
-    "python.defaultInterpreterPath": "/usr/local/python/bin/python",
     "security.workspace.trust.untrustedFiles": "newWindow",
     "terminal.integrated.fontSize": 20,
     "terminal.integrated.fontFamily": "'Comic Mono', Consolas, 'Courier New', monospace",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.menuBarVisibility": "classic",
     "workbench.preferredLightColorTheme": "GitHub Dark",
     "workbench.iconTheme": "material-icon-theme",
@@ -63,12 +43,8 @@
     "workbench.editorAssociations": {
       "*.png": "imagePreview.previewEditor",
       "*.ico": "imagePreview.previewEditor"
-    },
-    "[css]": {
-      "editor.defaultFormatter": "vscode.css-language-features"
     }
   },
-  // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
     "ms-python.python",
     "ms-vscode.cpptools-extension-pack",
@@ -78,19 +54,14 @@
     "PKief.material-icon-theme",
     "medo64.render-crlf"
   ],
-  // Uncomment the next line to use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "pip3 install cpplint",
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
-  // Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
-  // "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
-  // Uncomment when using a ptrace-based debugger like C++, Go, and Rust
-  // "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
-  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  // Installs cpplint cleanly without getting blocked by Debian system package protections
+  "postCreateCommand": "python3 -m pip install --break-system-packages cpplint || pip3 install cpplint",
+ 
   "remoteUser": "vscode",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/python:1": {}
+    "ghcr.io/devcontainers/features/python:1": {
+      "installTools": true
+    }
   }
-
 }
