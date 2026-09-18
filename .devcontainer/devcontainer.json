@@ -1,6 +1,5 @@
 {
   "name": "ICS3UC Debian Environment",
-  // ⚡ FIX: Removed the broken build block and replaced it with a direct, stable pre-built image link
   "image": "://microsoft.com",
 
   "settings": {
@@ -54,7 +53,6 @@
     "PKief.material-icon-theme",
     "medo64.render-crlf"
   ],
-  // Installs cpplint cleanly without getting blocked by Debian system package protections
   "postCreateCommand": "python3 -m pip install --break-system-packages cpplint || pip3 install cpplint",
  
   "remoteUser": "vscode",
