@@ -1,7 +1,6 @@
 {
   "name": "ICS3UC Debian Environment",
   "image": "://microsoft.com",
-
   "settings": {
     "C_Cpp.autocomplete": "Enabled",
     "C_Cpp.codeFolding": "Disabled",
@@ -54,7 +53,6 @@
     "medo64.render-crlf"
   ],
   "postCreateCommand": "python3 -m pip install --break-system-packages cpplint || pip3 install cpplint",
- 
   "remoteUser": "vscode",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
